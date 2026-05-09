@@ -1,8 +1,8 @@
 package com.java.lts.features;
 
 /*
-/ Sealed Class
- */
+* Sealed Class
+*/
 public sealed class Shape permits Circle, Square{
 
     public double getArea(){
