@@ -1,6 +1,7 @@
 package com.java.lts.features;
 
 /*
+* java 17
 * Sealed Class
 */
 public sealed class Shape permits Circle, Square{
