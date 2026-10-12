@@ -1,10 +1,6 @@
-package main.java.com.java25.concurrency;
+void main() throws InterruptedException {
 
-public class VirtualThreadExample {
-    static void main() throws InterruptedException {
+    Thread t1 = Thread.ofVirtual().start( () -> IO.println("This is "+Thread.currentThread()));
 
-        Thread t1 = Thread.ofVirtual().start( () -> IO.println("This is "+Thread.currentThread()));
-
-        t1.join();
-    }
+    t1.join();
 }
